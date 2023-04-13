@@ -2,14 +2,6 @@ pipeline {
   agent any
 
   stages {
-    stage("Delete Old Container") {
-      steps {
-        catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-          echo "Deleting old container"
-          sh "docker rm -f my-python-app"
-        }
-      }
-    }
 
     stage("Building and Running Container") {
       steps {
