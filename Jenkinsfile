@@ -14,7 +14,7 @@ pipeline {
     stage("Testing") {
       steps {
         echo "Running tests"
-        sh "docker exec my-python-app pytest /app/tests/test_math.py"
+        sh "docker exec -d my-python-app pytest /app/tests/test_math.py"
       }
     }
 
