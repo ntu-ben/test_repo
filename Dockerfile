@@ -5,4 +5,4 @@ WORKDIR /app
 COPY . .
 
 CMD [ "python", "./test_math.py" ]
-
+CMD ["tail", "-f", "/dev/null"]
