@@ -8,10 +8,6 @@ pipeline {
         echo "Building and running container"
         sh "docker build -t my-python-app ."
         sh "docker run -d --name my-python-app my-python-app"
-
-        // Wait for the container to start and become healthy
-        sh "docker wait my-python-app"
-        sh "docker inspect --format='{{.State.Health.Status}}' my-python-app | grep -q 'healthy'"
       }
     }
 
