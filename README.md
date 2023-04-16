@@ -1,12 +1,11 @@
-#### test_repo
-it's for cicd pipline test
+## test_repo
+it's for CI/CD pipline test
 
+Outline
 
-i want conflict
-1. git / github
-2. docker
-3. jenkins
-
+1. Git / Github
+2. Docker
+3. Jenkins
 
 
 
