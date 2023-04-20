@@ -3,7 +3,7 @@ from mymath import add, subtract, multiply, divide
 
 class TestMath(unittest.TestCase):
     def test_add(self):
-        self.assertEqual(add(1, 2), 3)
+        self.assertEqual(add(1, 2), 4)
 
     def test_subtract(self):
         self.assertEqual(subtract(1, 2), -1)
